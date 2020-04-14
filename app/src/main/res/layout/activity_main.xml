@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceDetailActivity"
+    android:transcriptMode="alwaysScroll">
+
+    <EditText
+        android:id="@+id/answerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy name" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy description"
+        android:layout_below="@+id/answerName"
+        android:id="@+id/answerDescription"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy category"
+        android:layout_below="@+id/answerDescription"
+        android:id="@+id/answerCategory" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy address title"
+        android:layout_below="@+id/answerCategory"
+        android:id="@+id/answerAddressTitle" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy address street"
+        android:layout_below="@+id/answerAddressTitle"
+        android:id="@+id/answerAddressStreet" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy elevation"
+        android:layout_below="@+id/answerAddressStreet"
+        android:id="@+id/answerElevation" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy latitude"
+        android:layout_below="@+id/answerElevation"
+        android:id="@+id/answerLatitude" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dummy longitude"
+        android:layout_below="@+id/answerLatitude"
+        android:id="@+id/answerLogitude" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/placeSelection"
+        android:layout_below="@+id/answerLogitude">
+    </Spinner>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Distance"
+        android:layout_below="@+id/placeSelection"
+        android:id="@+id/distance" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bearing"
+        android:layout_below="@+id/distance"
+        android:id="@+id/bearing" />
+
+</RelativeLayout>

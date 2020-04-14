@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PlaceAddActivity">
+
+    <EditText
+        android:id="@+id/answerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Description"
+        android:layout_below="@+id/answerName"
+        android:id="@+id/answerDescription"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Category"
+        android:layout_below="@+id/answerDescription"
+        android:id="@+id/answerCategory"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address title"
+        android:layout_below="@+id/answerCategory"
+        android:id="@+id/answerAddressTitle"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Address street"
+        android:layout_below="@+id/answerAddressTitle"
+        android:id="@+id/answerAddressStreet"
+        android:padding="15dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Elevation"
+        android:layout_below="@+id/answerAddressStreet"
+        android:id="@+id/answerElevation"
+        android:padding="15dp"
+        android:inputType="numberSigned"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitude"
+        android:layout_below="@+id/answerElevation"
+        android:id="@+id/answerLatitude"
+        android:padding="15dp"
+        android:inputType="numberSigned"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitude"
+        android:layout_below="@+id/answerLatitude"
+        android:id="@+id/answerLogitude"
+        android:padding="15dp"
+        android:inputType="numberSigned"
+        />
+
+</RelativeLayout>
